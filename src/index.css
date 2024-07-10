@@ -1,0 +1,235 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Хэдер */
+
+@font-face {
+  font-family: 'Fira Sans';
+  src: url(./assets/FiraSans-Regular.ttf);
+}
+@font-face {
+  font-family: 'Inter';
+  src: url(./assets/Inter-Regular.ttf);
+}
+
+header{
+  width: 100%;
+  height: 83.14px;
+  border-bottom: 1px solid #CED2DA;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header-inside{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 32px;
+  width: 70%;
+  height: 39.14px;
+  
+}
+.header-left{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 32px;
+  
+}
+
+.logo-text{
+  font-family: 'Fira Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13.963px;
+  line-height: 17px;
+  text-transform: uppercase;
+  color: #9534D2;
+}
+.user, .tickets, .exit{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 16px;
+  
+}
+a {
+  text-decoration: none;
+  color: #344051; 
+}
+a:hover{
+  color: #9534D2;
+}
+.header-text{
+  width: 71px;
+  height: 24px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #344051;
+}
+
+/* Афиша */
+
+.cardSection{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 70%;
+  left: 15%;
+}
+
+.menu-title{
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  color: #141C24;
+  padding: 40px 0 20px 20px  ;
+}
+
+.cardList{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 32px 0;
+}
+
+/* Карточки */
+
+.filmCard{
+  position: relative;
+  height: 500px;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content:flex-start;
+}
+.filmCardimg{
+  position: relative;
+  width: 100%;
+  height: 60%;
+  border-radius: 10px;
+}
+.descriptoin{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    position: relative;
+    height: 30%;
+    padding-bottom: 10px;
+    padding-top: 10px;  
+}
+.card-title{
+  font-family: 'Inter';
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 18px;
+  color: #141C24;
+}
+.card-subtitle{
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #141C24;
+}
+.button-more{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 32px;
+  width: 100%;
+  height: 10%;
+  background: #9534D2;
+  border: none;
+  border-radius: 16px;
+  font-family: 'Inter';
+  color: #FFFFFF;
+}
+.button-more:hover{
+  border: 2px solid white;
+  font-weight: 1000;
+}
+
+
+/* Описание и расписание */
+
+.back-block{
+  display: inline-flex;
+  padding: 20px;
+  gap: 20px;
+  align-items: center;
+}
+.back{
+  font-family: 'Inter';
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #637083;
+}
+
+.selectedCardimg{
+  position: relative;
+  width: 30%;
+  height: 60%;
+  border-radius: 10px;
+}
+
+.filmInfo{
+  display:flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 70%;
+  padding-left: 30px;
+}
+
+.selected-film-title{
+  font-family: 'Inter';
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 36px;
+  color: #141C24;
+}
+.selected-descriptoin{
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  position: relative;
+  height: 50%;
+  padding-top: 10%; 
+}
+
+.schedule-title{
+  font-family: 'Inter';
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  color: #141C24;
+}
+.halls-title{
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #344051;
+}
+
+
+.place{
+  width: 30px;
+  height: 30px;
+  border:2px solid #344051;
+  border-radius: 5px ;
+}
+.place:hover{
+  border: 2px solid #c48be8;
+}
+
+

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="19px" height="19px" viewBox="0 0 19 19" version="1.1">
+<defs>
+<linearGradient id="linear0" gradientUnits="userSpaceOnUse" x1="148.707" y1="150" x2="298.701" y2="298.701" gradientTransform="matrix(0.0633333,0,0,0.0633333,0,0)">
+<stop offset="0" style="stop-color:rgb(100%,33.333333%,0%);stop-opacity:1;"/>
+<stop offset="1" style="stop-color:rgb(73.333333%,100%,0%);stop-opacity:1;"/>
+</linearGradient>
+<linearGradient id="linear1" gradientUnits="userSpaceOnUse" x1="148.707" y1="150" x2="298.701" y2="298.701" gradientTransform="matrix(0.0633333,0,0,0.0633333,0,0)">
+<stop offset="0" style="stop-color:rgb(100%,33.333333%,0%);stop-opacity:1;"/>
+<stop offset="1" style="stop-color:rgb(73.333333%,100%,0%);stop-opacity:1;"/>
+</linearGradient>
+<linearGradient id="linear2" gradientUnits="userSpaceOnUse" x1="148.707" y1="150" x2="298.701" y2="298.701" gradientTransform="matrix(0.0633333,0,0,0.0633333,0,0)">
+<stop offset="0" style="stop-color:rgb(100%,33.333333%,0%);stop-opacity:1;"/>
+<stop offset="1" style="stop-color:rgb(73.333333%,100%,0%);stop-opacity:1;"/>
+</linearGradient>
+</defs>
+<g id="surface1">
+<path style=" stroke:none;fill-rule:nonzero;fill:url(#linear0);" d="M 18.835938 10.730469 L 10.136719 10.144531 L 18.105469 13.351562 C 18.46875 12.535156 18.71875 11.652344 18.835938 10.730469 Z M 18.835938 10.730469 "/>
+<path style=" stroke:none;fill-rule:nonzero;fill:url(#linear1);" d="M 17.050781 15.164062 C 15.324219 17.492188 12.566406 19 9.457031 19 C 4.234375 19 0 14.746094 0 9.5 C 0 4.253906 4.234375 0 9.457031 0 C 12.574219 0 15.335938 1.511719 17.058594 3.847656 L 9.160156 8.097656 L 14.242188 2.851562 L 11.425781 2.851562 L 7.964844 7.675781 L 7.964844 2.851562 L 5.675781 2.851562 L 5.675781 16.148438 L 7.964844 16.148438 L 7.964844 11.332031 L 11.425781 16.148438 L 14.242188 16.148438 L 9.289062 11.070312 Z M 17.050781 15.164062 "/>
+<path style=" stroke:none;fill-rule:nonzero;fill:url(#linear2);" d="M 18.105469 5.648438 L 10.191406 8.835938 L 18.835938 8.269531 C 18.71875 7.347656 18.46875 6.464844 18.105469 5.648438 Z M 18.105469 5.648438 "/>
+</g>
+</svg>
