@@ -1,0 +1,15 @@
+
+<svg width="56" height="57" viewBox="0 0 56 57" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Green Circle -->
+  <path d="M28 57C43.464 57 56 44.464 56 29C56 13.536 43.464 1 28 1C12.536 1 0 13.536 0 29C0 44.464 12.536 57 28 57Z" fill="url(#paint0_linear_10647_2120)"/>
+  <!-- White Checkmark -->
+  <path d="M15 27L24.5 36.5L42 19" stroke="white" stroke-width="2"/>
+  <!-- Gradient Declaration -->
+  <defs>
+    <linearGradient id="paint0_linear_10647_2120" x1="28" y1="57" x2="28" y2="0" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#7DBA6E"/>
+      <stop offset="0.9531" stop-color="#C6E99A"/>
+    </linearGradient>
+  </defs>
+</svg>
+

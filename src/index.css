@@ -178,7 +178,7 @@ a:hover{
 .selectedCardimg{
   position: relative;
   width: 30%;
-  height: 60%;
+  height: 70%;
   border-radius: 10px;
 }
 
@@ -199,11 +199,11 @@ a:hover{
 }
 .selected-descriptoin{
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   flex-direction: column;
   position: relative;
   height: 50%;
-  padding-top: 10%; 
+  padding-top: 5%; 
 }
 
 .schedule-title{
@@ -212,6 +212,74 @@ a:hover{
   font-size: 24px;
   line-height: 32px;
   color: #141C24;
+  margin-bottom: 20px;
+}
+
+.button-container {
+  display: inline-flex;
+  border: none;
+  background: #F3F4F7;
+  border-radius: 14px;
+  
+}
+
+.button-date{
+  border: none;
+  background: none;
+  padding: 10px;
+
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+
+  color: #637083;
+}
+
+.active-button-date{
+  border: 2px solid #F3F4F7;
+  border-radius: 14px;
+  background: #FFFFFF;
+  padding: 10px;
+
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+
+  color: #141C24;
+  
+}
+
+.button-time{
+  border: 2px solid  #F3F4F7;
+  border-radius: 14px;
+  background: #FFFFFF;
+  padding: 10px;
+
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+
+  color: #141C24;
+}
+.active-button-time{
+  background: #637083;
+  border-radius: 14px;
+  padding: 10px;
+  border: none;
+
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+
+  color: #FFFFFF;
 }
 .halls-title{
   font-family: 'Inter';
@@ -220,16 +288,250 @@ a:hover{
   line-height: 16px;
   color: #344051;
 }
-
-
+.screen{
+  position: relative;
+  height: 2px;
+  width: 100%;
+  background-color: #637083;
+  left: 20px;
+  margin-bottom: 20px;
+}
 .place{
-  width: 30px;
-  height: 30px;
-  border:2px solid #344051;
-  border-radius: 5px ;
+  width: 35px;
+  height: 25px;
+  border:1px solid #6b717f;
+  border-radius: 6px ;
 }
 .place:hover{
   border: 2px solid #c48be8;
 }
+.totals{
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+
+  color: #0b1015;
+}
+.button-buy{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 32px;
+  width: 100%;
+  height: 10%;
+  background: #637083;
+  border: none;
+  border-radius: 16px;
+  font-family: 'Inter';
+  color: #FFFFFF;
+}
+
+
+/* Авторизация */
+
+.login-title{
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  color: #141C24;
+  padding: 40px 0 20px 0;
+}
+ .login-text{
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #344051;
+ }
+ .tel-input {
+  padding: 8px;
+  margin-top: 10px;
+  width: 50%;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+.tel-input-error{
+  padding: 8px;
+  margin-top: 10px;
+  width: 50%;
+  border-radius: 5px;
+  border: 1px solid red;
+}
+
+/* Модальное окно */
+
+.modal{
+  height: 100vh;
+  width: 100vw;
+  background: rgba(0, 0, 0, 0.4);
+  position: fixed;
+  top: 0;
+  left:0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.5s;
+}
+.modal.active{
+  opacity: 1;
+  pointer-events: all;
+  
+}
+.modal-content{
+  padding: 30px;
+  border-radius: 12px;
+  background: white;
+  width: 35vw;
+  transform: scale(0.5);
+  transition: 0.4s all;
+}
+.modal-content.active{
+  transform: scale(1);
+}
+
+
+ /* Успешно */
+
+.secondary-text{
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #637083;
+}
+.text{
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #141C24;
+}
+
+.link-text{
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #344051;
+}
+
+
+/* Билет */
+
+.ticket{
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px;
+  gap: 19px;
+
+  width: 360px;
+  height: 260px;
+
+  background: #FFFFFF;
+  border: 2px dashed #616666;
+  border-radius: 16px;
+}
+
+.first-line{
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.ticket-secondary-text{
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #97A1AF;
+
+}
+.second-line{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+.ticket-title{
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  color: #141C24;
+}
+.ticket-main-text{
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #344051;
+}
+.label{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 4px 12px;
+  background: #ECF9F2;
+  border-radius: 150px;
+}
+.lable-text{
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: #4ECF53;
+}
+.ticket-button{
+  position: relative;
+  width: 100%;
+  height: 56px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 32px;
+  border: 1px solid #616666;
+  border-radius: 16px;
+  background-color: #FFFFFF;
+
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #344051;
+}
+.ticket-button:hover{
+  border: 2px solid #616666;
+  font-weight: 800;
+}
+
+
+
+
+
+
+
+
+
+
 
 

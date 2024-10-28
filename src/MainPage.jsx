@@ -4,11 +4,13 @@ import FilmCard from "./FilmCard"
 import SelectedFilmCard from "./SelectedFilmCard"
 
 
-export default function MainPage(){
+export default function MainPage({selectedFilm, setSelectedFilm,  setPaidTicketInfo, userInfo}){
     const [filmList, setFilmList] = useState([])
-    const [selectedFilm, setSelectedFilm] = useState({})
     const [schedule, setSchedule] = useState([])
     
+    useEffect(()=>{
+      setSelectedFilm({})
+    }, [])
     
     useEffect(()=>{
       axios.get('https://shift-backend.onrender.com/cinema/today').then(res=>{setFilmList(res.data.films)})
@@ -16,8 +18,14 @@ export default function MainPage(){
     }, [])
   
     function openCard(id){
-      axios.get('https://shift-backend.onrender.com/cinema/film/'+id).then(res=>{setSelectedFilm(res.data.film)})
-      axios.get(`https://shift-backend.onrender.com/cinema/film/${id}/schedule`).then(res=>{setSchedule(res.data.schedules)})
+      Promise.all([
+        axios.get('https://shift-backend.onrender.com/cinema/film/' + id),
+        axios.get('https://shift-backend.onrender.com/cinema/film/' + id + '/schedule')
+      ]).then(([filmRes, scheduleRes]) => {
+        setSelectedFilm(filmRes.data.film);
+        setSchedule(scheduleRes.data.schedules);
+        window.scrollTo({top: 0});
+      });
     }
 
     return(
@@ -34,7 +42,7 @@ export default function MainPage(){
               </div>
             </>
           : schedule.length > 0 &&
-            <SelectedFilmCard selectedFilm={selectedFilm} schedule={schedule} onClick={()=> setSelectedFilm({})}/>
+            <SelectedFilmCard selectedFilm={selectedFilm} schedule={schedule} setPaidTicketInfo={setPaidTicketInfo} onClick={()=> setSelectedFilm({})} userInfo={userInfo}/>
             
           }
         </section>
